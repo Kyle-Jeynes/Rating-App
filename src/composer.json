@@ -1,0 +1,27 @@
+{
+    "name": "kyle-jeynes/rating-botterill-bartless-workshop",
+    "description": "Entrepreneuers Circle",
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Kyle Jeynes"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "altorouter/altorouter": "1.1.0",
+        "smarty/smarty": "^5.4"
+    },
+    "autoload": {
+        "files": [
+            "app/traits/Singleton.php",
+            "app/app.php",
+            "app/functions.php",
+            "app/bootstrap.php"
+        ],
+        "psr-4": {
+            "App\\": "app"
+        }
+    }
+}
