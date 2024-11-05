@@ -1,0 +1,120 @@
+$primary: #89CFF0;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
+
+* {
+    -webkit-transition:0.2s;
+    -moz-transition:0.2s;
+    -o-transition:0.2s;
+    transition:0.2s;
+}
+
+.index-bg {
+    background-color: #f2f2f2;
+}
+
+.title {
+    color: $primary;
+    font-size: 18pt;
+    font-weight: bolder;
+}
+
+.awful-opt {
+    text-decoration: line-through;
+    color: red;
+}
+
+.awesome-opt {
+    color: green;
+}
+
+.card-title {
+    font-weight: bolder;
+}
+
+.form-group {
+    @extend .mt-2;
+}
+
+form button {
+    @extend .mt-4;
+    float: right;
+}
+
+form label {
+    padding-left: $spacer * .1;
+    padding-bottom: $spacer * .5;
+}
+
+.rating {
+    float: left;
+    border: none;
+}
+
+.rating:not(:checked)>input {
+    position: absolute;
+    top: -9999px;
+    clip: rect(0, 0, 0, 0);
+}
+
+.rating:not(:checked)>label {
+    float: right;
+    width: 1em;
+    padding: 0 .1em;
+    overflow: hidden;
+    white-space: nowrap;
+    cursor: pointer;
+    font-size: 200%;
+    line-height: 1.2;
+    color: #ddd;
+}
+
+.rating:not(:checked)>label:before {
+    content: '★ ';
+}
+
+.rating>input:checked~label {
+    color: #f70;
+}
+
+.rating:not(:checked)>label:hover,
+.rating:not(:checked)>label:hover~label {
+    color: gold;
+}
+
+.rating>input:checked+label:hover,
+.rating>input:checked+label:hover~label,
+.rating>input:checked~label:hover,
+.rating>input:checked~label:hover~label,
+.rating>label:hover~input:checked~label {
+    color: #ea0;
+}
+
+.rating>label:active {
+    position: relative;
+}
+
+#emitter {
+    visibility: hidden;
+    background-color: #222;
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    top: 40%;
+    left: 0%;
+}
+
+.dot-container {
+    position: absolute;
+    left: 0;
+    top: 0;
+    overflow: visible;
+    z-index: 5000;
+    pointer-events: none;
+}
+
+.dot {
+    position: absolute;
+    pointer-events: none;
+}
