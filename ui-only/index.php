@@ -60,7 +60,6 @@
                                                 </div>
                                             </button>
                                         </div>
-                                        </button>
                                     </form>
                                 </div>
                             </div>
