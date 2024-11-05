@@ -31,11 +31,11 @@
                                     <form id="rating-form">
                                         <div class="form-group">
                                             <label for="fullName">Full Name</label>
-                                            <input name="fullName" type="text" class="form-control" id="fullName" placeholder="Enter Full Name" required>
+                                            <input name="fullName" type="text" class="form-control" id="fullName" placeholder="Enter Full Name" required />
                                         </div>
                                         <div class="form-group">
                                             <label for="exampleInputEmail1">Email address</label>
-                                            <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                                            <input name="email" type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
                                         </div>
                                         <div class="form-group">
                                             <label for="rating">Star Review</label>
